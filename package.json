@@ -1,0 +1,42 @@
+{
+  "name": "jslib-base",
+  "version": "1.0.0",
+  "description": "js第三方库脚手架",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "conventional-changelog": "^3.0.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "ghooks": "^2.0.4",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "test": "npm run test",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w",
+    "commitizen": "commitizen init cz-conventional-changelog --save --save-exact"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuhongwei/jslib-base.git"
+  },
+  "keywords": [
+    "js",
+    "脚手架"
+  ],
+  "author": "Twittytop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuhongwei/jslib-base/issues"
+  },
+  "homepage": "https://github.com/tuhongwei/jslib-base#readme"
+}
