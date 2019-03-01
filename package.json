@@ -9,6 +9,7 @@
     "babel-preset-env": "^1.7.0",
     "conventional-changelog": "^3.0.6",
     "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.14.1",
     "ghooks": "^2.0.4",
     "validate-commit-msg": "^2.14.0"
   },
